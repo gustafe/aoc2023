@@ -54,8 +54,9 @@ for my $line (@input) {
 
     # this is my first attempt, which works for my input and solved
     # part 2. It required me to manually search for overlaps (like
-    # twone, eightwo etc). My input did not contain some combinations
-    # like sevenine. A better regex is:
+    # twone, eightwo etc), and then add them to the regex array.  My
+    # input did not contain some combinations like sevenine. A better
+    # regex is (positive look-ahead):
 
     # m/(?=(\d{1}|one|two|three|four|five|six|seven|eight|nine))/g
 
@@ -68,12 +69,12 @@ for my $line (@input) {
 
     # special cases as per above
 
-    if ( $spelled[0] eq 'twone' )    { $spelled[0]  = 2 }
-    if ( $spelled[-1] eq 'twone' )   { $spelled[-1] = 1 }
-    if ( $spelled[0] eq 'oneight' )  { $spelled[0]  = 1 }
-    if ( $spelled[-1] eq 'oneight' ) { $spelled[-1] = 8 }
-    if ( $spelled[0] eq 'eightwo' )  { $spelled[0]  = 8 }
-    if ( $spelled[-1] eq 'eightwo' ) { $spelled[-1] = 2 }
+    if ( $spelled[0]  eq 'twone' )    { $spelled[0]  = 2 }
+    if ( $spelled[-1] eq 'twone' )    { $spelled[-1] = 1 }
+    if ( $spelled[0]  eq 'oneight' )  { $spelled[0]  = 1 }
+    if ( $spelled[-1] eq 'oneight' )  { $spelled[-1] = 8 }
+    if ( $spelled[0]  eq 'eightwo' )  { $spelled[0]  = 8 }
+    if ( $spelled[-1] eq 'eightwo' )  { $spelled[-1] = 2 }
 
     my $val2 = $translate{ $spelled[0] } . $translate{ $spelled[-1] };
 
@@ -82,7 +83,6 @@ for my $line (@input) {
     $sum2 += $val2;
 
 }
-say $sum2;
 
 ### FINALIZE - tests and run time
 is( $sum,  54573, "Part 1: $sum" );

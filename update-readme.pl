@@ -21,7 +21,7 @@ my %metadata;
 for my $f (sort {$b cmp $a} @files) {
     my $str;
     open( my $in_fh, '<:encoding(UTF-8)', "$dir/$f") or die "can't open $dir/$f for reading: $!";
-    #    warn "==> $f";
+        warn "==> $f";
     my ( $day, $title ) = $f =~ m/^d(\d+)\-(.*)/;
     $title =~ s/\.pl$//;
     $title =~ s/\-/\ /g;
