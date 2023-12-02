@@ -5,17 +5,15 @@ I use Perl for all the solutions.
 Most assume the input data is in a file called `input.txt` in the same
 directory as the file.
 
+### A note on scoring
+
+I award myself one point per star, but only if I manage to solve it myself without help. 
+
 ## TODO
 
 ## Solution comments in reverse order
 
 Running score: 4 / 4
-
-
-### Puzzles by difficulty  (leaderboard completion times)
-
-1. Day 01 - Trebuchet: 7m03s
-1. Day 02 - Cube Conundrum: 6m15s
 
 ### Day 2: Cube Conundrum
 
@@ -34,4 +32,9 @@ I then peeked in the subreddit for the specific weird-ass syntax required for ov
 Score: 2
 
 Leaderboard completion time: 7m03s
+
+### Puzzles by difficulty  (leaderboard completion times)
+
+1. Day 01 - Trebuchet: 7m03s
+1. Day 02 - Cube Conundrum: 6m15s
 

@@ -10,25 +10,32 @@ my %opts = ( output_encoding => 'UTF-8', );
 my $dir    = '.';
 my $readme = "$dir/README.md";
 opendir( D, $dir ) or die "can't open directory: $!";
-my @files = grep { ( !/^\./ ) and -f "$dir/$_" and ( $_ =~ m/^d.*\.pl$/ ) }
-    readdir(D);
+my @files = grep { ( !/^\./ ) and
+		     -f "$dir/$_" and
+		     ( $_ =~ m/^d.*\.pl$/ ) }  readdir(D);
 closedir D;
-say join( ',', @files );
-open( my $out_fh, ">", $readme ) or die "can't open $readme for writing: $!";
+#say join( ',', @files );
+
 my $md_string;
 my @entries;
 my $score_sum;
 my %metadata;
 
+open( my $out_fh, ">", $readme ) or die "can't open $readme for writing: $!";
+
 for my $f ( sort { $b cmp $a } @files ) {
+
     my $str;
     open( my $in_fh, '<:encoding(UTF-8)', "$dir/$f" )
         or die "can't open $dir/$f for reading: $!";
-    warn "==> $f";
+
     my ( $day, $title ) = $f =~ m/^d(\d+)\-(.*)/;
+
     $title =~ s/\.pl$//;
     $title =~ s/\-/\ /g;
+
     ( $metadata{$day}->{title} ) = $title;
+
     my $parser = Pod::Markdown->new(%opts);
     $parser->output_string($str);
     $parser->parse_file($in_fh);
@@ -36,6 +43,7 @@ for my $f ( sort { $b cmp $a } @files ) {
     if ( $str =~ m/^Score\:.*(\d+)/m ) {
         $score_sum += $1;
     }
+
     if ( $str =~ m/completion time: (.*)$/ ) {
         my $time_tag = $1;
         $metadata{$day}->{time_tag} = $time_tag;
@@ -52,22 +60,36 @@ for my $f ( sort { $b cmp $a } @files ) {
             $seconds += $2;
 
         }
-        $metadata{$day}->{seconds} = $seconds;
+
+	$metadata{$day}->{seconds} = $seconds;
     }
 
     push @entries, $str;
+
     close $in_fh;
 }
-say dump \%metadata;
+
+
 if ( $metadata{31} ) {
     $metadata{31}->{seconds} = 0;
 }
+say dump \%metadata;
+
+# shift the top entry, it's metadata/notes 
 my $top = shift @entries;
+
 say $out_fh $top;
+
 say $out_fh "Running score: $score_sum / "
-    . ( scalar(@entries) ) * 2 . "\n\n";
+    . ( scalar(@entries) ) * 2 . "\n";
+
+
+for my $e (@entries) {
+    say $out_fh $e;
+}
 
 say $out_fh "### Puzzles by difficulty  (leaderboard completion times)\n";
+
 my $count = 1;
 for my $day ( sort { $metadata{$b}->{seconds} <=> $metadata{$a}->{seconds} }
     keys %metadata )
@@ -81,9 +103,6 @@ for my $day ( sort { $metadata{$b}->{seconds} <=> $metadata{$a}->{seconds} }
 }
 say $out_fh '';
 
-for my $e (@entries) {
-    say $out_fh $e;
-}
 
 close $out_fh;
 
