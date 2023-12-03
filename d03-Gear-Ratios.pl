@@ -1,5 +1,5 @@
 #! /usr/bin/env perl
-# Advent of Code 2023 Day 3 - Gear Ratios - part 1 / part 2 / complete solution
+# Advent of Code 2023 Day 3 - Gear Ratios - complete solution
 # https://adventofcode.com/2023/day/3
 # https://gerikson.com/files/AoC2023/UNLICENSE
 ###########################################################
