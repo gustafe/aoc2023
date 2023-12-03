@@ -23,10 +23,10 @@ that contain a period anyway, so using an arrayref would be
 wasteful. So we go through the input line by line, adding characters
 to the map if it's not a period.
 
-The main loop is to go through the completed map. If we find a symbol
-(non-digit), we look in all 8 directions around it to find something
-else. My code assumes this will be a digit, and that's the case with
-my input.
+The main loop for part 1 is to go through the completed map. If we
+find a symbol (non-digit), we look in all 8 directions around it to
+find something else. My code assumes this will be a digit, and that's
+the case with my input.
 
 Once we find a digit, we look left and right around it to find other
 digits. Once we've found a run of consecutive digits, they're
@@ -46,11 +46,14 @@ made me miss the situation with the 456 and 789 being legal
 connections but not consecutive.
 
 So what I finally settled on was adding a second hashref recording the
-position of every symbol and all numerals connected to it. Then for
-the summary I looped over that hashref and did the sum for part 1.
+position of every symbol and all numerals connected to it. Using the
+numeral as a key ensured there was only going to be one unique numeral
+in that position. Then for the summary I looped over that hashref and
+did the sum for part 1.
 
 This construction made part 2 very easy, I just had to check for
-asterisk symbols with more than one value attached.
+asterisk symbols with more than one value attached, and sum their
+products.
 
 Score: 2
 
