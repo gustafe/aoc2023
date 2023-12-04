@@ -13,7 +13,13 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 6 / 6
+Running score: 8 / 8
+
+### Day 4: Scratchcards
+
+Score: 2
+
+Leaderboard completion time: 7m08s
 
 ### Day 3: Gear Ratios
 
@@ -80,6 +86,7 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 03 - Gear Ratios: 11m37s
+1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
 1. Day 02 - Cube Conundrum: 6m15s
 
