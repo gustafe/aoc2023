@@ -17,6 +17,14 @@ Running score: 8 / 8
 
 ### Day 4: Scratchcards
 
+The first attempt at part 2 was literally just implement the instructions in code: I had an array of cards, I picked the first, and depending on that card's wins and its position in the list, I prepended the cloned cards to the front of the array. 
+
+This _worked_ in the sense that I got the correct answer, but it took 5s and a huge array. 
+
+After thinking for a bit I realized it was more efficient to simply store the number of cloned cards in an array whose indices were the card ID. Much faster.
+
+Previous solution: [commit 39daebc](https://github.com/gustafe/aoc2023/blob/39daebc7a744b33b355da831f7f16b21605ccb75/d04-Scratchcards.pl)
+
 Score: 2
 
 Leaderboard completion time: 7m08s

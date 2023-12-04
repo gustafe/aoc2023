@@ -26,9 +26,9 @@ while (<$fh>) { chomp; s/\r//gm; push @input, $_; }
 my $Cards;
 for my $line (@input) {
     my $card;
-    my ($info, $data) = split( /:/, $line );
+    my ( $info, $data ) = split( /:/, $line );
     ( $card->{id} ) = ( $info =~ m/Card\s+(\d+)/ );
-    my ($win,$num) = split( /\|/, $data );
+    my ( $win, $num ) = split( /\|/, $data );
 
     %{ $card->{winning} } = map { $_ => 1 } ( $win =~ m/(\d+)/g );
     %{ $card->{numbers} } = map { $_ => 1 } ( $num =~ m/(\d+)/g );
@@ -36,7 +36,6 @@ for my $line (@input) {
     push @$Cards, $card;
 }
 
-say "==> Part 1...";
 my $sum1;
 my $Wins;
 for my $card (@$Cards) {
@@ -52,25 +51,32 @@ for my $card (@$Cards) {
 }
 
 my $max_id = $Cards->[-1]{id};
-
-my @array = map { $_->{id} } @{$Cards};
 my $sum2;
-say "==> Part 2...";
-
-while (@array) {
-    my $next = shift @array;
-    $sum2++;
-    printf( "~~> %7d %7d\n", $sum2, scalar @array ) if $sum2 % 500_000 == 0;
-    my $cards_to_copy = $Wins->{$next};
-    for my $i ( 1 .. $cards_to_copy ) {
-        push @array, $next + $i if $next + $i <= $max_id;
-    }
-    say "$next " . join( ',', @array ) if $testing;
+my @array = (0);
+for my $card (@$Cards) {
+    $array[ $card->{id} ] = 1;
 }
 
+
+for my $id ( 1 .. $max_id ) {
+    my $cards_to_copy = $Wins->{$id};
+    for my $i ( 1 .. $cards_to_copy ) {
+        $array[ $id + $i ] += $array[$id] if $id + $i <= $max_id;
+    }
+}
+$sum2 = sum @array;
+
 ### FINALIZE - tests and run time
-is( $sum1, 21088,   "Part 1: $sum1" );
-is( $sum2, 6874754, "Part 2: $sum2" );
+if ($testing) {
+    is( $sum1, 13, "Part 1: $sum1" );
+    is( $sum2, 30, "Part 2: $sum2" );
+
+} else {
+    is( $sum1, 21088,   "Part 1: $sum1" );
+    is( $sum2, 6874754, "Part 2: $sum2" );
+
+}
+
 done_testing();
 say sec_to_hms( tv_interval($start_time) );
 
@@ -88,6 +94,14 @@ sub sec_to_hms {
 =head3 Day 4: Scratchcards
 
 =encoding utf8
+
+The first attempt at part 2 was literally just implement the instructions in code: I had an array of cards, I picked the first, and depending on that card's wins and its position in the list, I prepended the cloned cards to the front of the array. 
+
+This I<worked> in the sense that I got the correct answer, but it took 5s and a huge array. 
+
+After thinking for a bit I realized it was more efficient to simply store the number of cloned cards in an array whose indices were the card ID. Much faster.
+
+Previous solution: L<commit 39daebc|https://github.com/gustafe/aoc2023/blob/39daebc7a744b33b355da831f7f16b21605ccb75/d04-Scratchcards.pl>
 
 Score: 2
 
