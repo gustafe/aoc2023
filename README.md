@@ -11,9 +11,19 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## TODO
 
+- Day 5 part 2
+
 ## Solution comments in reverse order
 
-Running score: 8 / 8
+Running score: 9 / 10
+
+### Day 5: If You Give A Seed A Fertilizer - Part 1
+
+A tough problem combined with a stressful day leads to only one star so far.
+
+Score: **1**
+
+Leaderboard completion time: 26m37s
 
 ### Day 4: Scratchcards
 
@@ -93,6 +103,7 @@ Leaderboard completion time: 7m03s
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
+1. Day 05 - If You Give A Seed A Fertilizer p1: 26m37s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
