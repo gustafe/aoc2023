@@ -15,7 +15,7 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 11 / 12
+Running score: 12 / 12
 
 ### Day 6: Wait For It
 
@@ -27,11 +27,15 @@ Score: 2
 
 Leaderboard completion time: 5m02s
 
-### Day 5: If You Give A Seed A Fertilizer - Part 1
+### Day 5: If You Give A Seed A Fertilizer
 
-A tough problem combined with a stressful day leads to only one star so far.
+I solved both parts after thinking about it for a while.
 
-Score: **1**
+I had the right idea from the start for part 2, which was handling ranges of integers instead of arrays. But I got lost in the weeds trying to get my iterations to to work. Studying some other solution put me on the right track.
+
+This solution supersedes my earlier part 1, which can be dredged from the repo is one wishes to see it.
+
+Score: 2
 
 Leaderboard completion time: 26m37s
 
@@ -113,7 +117,7 @@ Leaderboard completion time: 7m03s
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
-1. Day 05 - If You Give A Seed A Fertilizer p1: 26m37s
+1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
