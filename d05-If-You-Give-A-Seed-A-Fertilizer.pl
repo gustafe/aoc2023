@@ -61,10 +61,12 @@ while (@data) {
 
 my $ranges;
 if ( !$part2 ) {
+    # for part 1, we just enter every number as a 1-length list
     for my $s (@seeds) {
         push @$ranges, [ $s, 1 ];
     }
 } else {
+    # for part 2, input is start value + length
     while (@seeds) {
         my $start = shift @seeds;
         my $len   = shift @seeds;
@@ -75,12 +77,12 @@ if ( !$part2 ) {
 for my $map (@$Maps) {
     my @nextranges;
     for my $interval ( @{ $map->{intervals} } ) {
-
+	# putting destination before source is such a dick move 
         my ( $dst, $src, $len ) = @$interval;
         my @noopranges;
         for my $range (@$ranges) {
             my ( $rpos, $rlen ) = @$range;
-
+	    # ranges are outside the interval entirely, don't translate
             if ( $rpos + $rlen < $src ) {
                 push @noopranges, [ $rpos, $rlen ];
             } elsif ( $rpos >= $src + $len ) {
@@ -90,8 +92,11 @@ for my $map (@$Maps) {
                 my $end    = min( $rpos + $rlen, $src + $len );
                 my $newPos = $dst + $start - $src;
                 my $newLen = $end - $start;
+		# translated range
                 push @nextranges, [ $newPos, $newLen ];
+		# add the bit outside translation
                 if ( $rpos < $src ) {
+
                     push @noopranges, [ $rpos, $src - $rpos ];
                 }
                 if ( $rpos + $rlen > $src + $len ) {
@@ -106,6 +111,7 @@ for my $map (@$Maps) {
     push @nextranges, @$ranges;
     $ranges = \@nextranges;
 }
+# find the smallest first element in each output range 
 my $ans = min map { $_->[0] } @$ranges;
 ### FINALIZE - tests and run time
 
@@ -115,14 +121,10 @@ if ($part2) {
     is( $ans, 251346198, "Part 1: " . $ans );
 
 }
-
-#is($part1,251346198,"Part1 : ".$part1);
-
 done_testing();
 say sec_to_hms( tv_interval($start_time) );
 
 ### SUBS
-
 
 sub sec_to_hms {  
     my ($s) = @_;
