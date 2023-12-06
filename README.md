@@ -11,8 +11,6 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## TODO
 
-- Day 5 part 2
-
 ## Solution comments in reverse order
 
 Running score: 12 / 12
