@@ -15,7 +15,17 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 9 / 10
+Running score: 11 / 12
+
+### Day 6: Wait For It
+
+Mood for this year sure is whiplash. This was easy. Even accounting for the brute-force nature of part 2, runtime is around 20s. 
+
+I could sit down and try to dick around with solutions to the quadratic equation, but I'm pretty sure fencepost errors would creep in and I'd spend more time troubleshooting those. 
+
+Score: 2
+
+Leaderboard completion time: 5m02s
 
 ### Day 5: If You Give A Seed A Fertilizer - Part 1
 
@@ -108,4 +118,5 @@ Leaderboard completion time: 7m03s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
 1. Day 02 - Cube Conundrum: 6m15s
+1. Day 06 - Wait For It: 5m02s
 
