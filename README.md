@@ -47,9 +47,13 @@ Leaderboard completion time: 5m02s
 
 I solved both parts after thinking about it for a while.
 
-I had the right idea from the start for part 2, which was handling ranges of integers instead of arrays. But I got lost in the weeds trying to get my iterations to to work. Studying some other solution put me on the right track.
+I had the right idea from the start for part 2, which was handling
+ranges of integers instead of arrays. But I got lost in the weeds
+trying to get my iterations to to work. Studying some other solutions
+put me on the right track.
 
-This solution supersedes my earlier part 1, which can be dredged from the repo is one wishes to see it.
+This solution supersedes my earlier part 1, which can be dredged from
+the repo is one wishes to see it.
 
 Score: 2
 
