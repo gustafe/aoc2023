@@ -13,7 +13,25 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 12 / 12
+Running score: 14 / 14
+
+### Day 7: Camel Cards
+
+This was a fun problem, which played to Perl's strengths.
+
+My first attempt was to get a nice sorting pipeline where I could just
+add the list of hands and it would first sort by type, and then by
+value. But I couldn't really get that to work with input from an array
+of hashes, so I switched over to determining the type first and having
+that as subkey in the hashref. This made it easier to sort.
+
+Part 2 presented some problems, but bruteforcing all possible
+combinations of joker replacements was not hard at all. I had to deal
+with the special case `JJJJJ` separately.
+
+Score: 2
+
+Leaderboard completion time: 16m00s
 
 ### Day 6: Wait For It
 
@@ -116,6 +134,7 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
+1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
