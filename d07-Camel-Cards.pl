@@ -115,41 +115,40 @@ sub get_type {
         $labels{$f}++;
     }
 
-    if ( keys %labels == 5 ) {    # high card
+    if ( keys %labels == 5 ) {    # all different values, high card
         return '7_high_card';
     }
-    if ( keys %labels == 1 ) {    # five of a kind
+    if ( keys %labels == 1 ) {    # just one value, five of a kind
         return '1_five_of_a_kind';
     }
-    if ( keys %labels == 4 ) {    # 1 pair
+    if ( keys %labels == 4 ) {    # two of the same value, 1 pair
         return '6_one_pair';
     }
-    if ( keys %labels == 2 ) {
+    if ( keys %labels == 2 ) { # either four of a kind, or full house
+	# how are the labels distributed?
         my @num = sort { $b <=> $a } map { $labels{$_} } keys %labels;
         if ( $num[0] == 4 and $num[1] == 1 ) {
-            return '2_four_of_a_kind';    # four of a kind
+            return '2_four_of_a_kind';
         } elsif ( $num[0] == 3 and $num[1] == 2 ) {
-            return '3_full_house';        # full house
+            return '3_full_house';
         }
     }
-    if ( keys %labels == 3 ) {
+    if ( keys %labels == 3 ) { # either tree of a kind, or two pair
         my @num = sort { $b <=> $a } map { $labels{$_} } keys %labels;
         if ( $num[0] == 3 ) {
-            return '4_three_of_a_kind';    # three of a kind
+            return '4_three_of_a_kind';
         }
         if ( $num[0] == 2 and $num[0] == 2 ) {
-            return '5_two_pair';           # two pair
+            return '5_two_pair';
         }
     }
     return undef;
 }
 
 sub compare_hand {
-    # given 2 strings, compare them to each other
-    # used as a custom sort function
-    
-    my $a_type = get_type($a);
-    my $b_type = get_type($b);
+    # given 2 strings, compare them to each other according to the
+    # Camel Card rules. Used as a custom sort function
+
     my $values = '23456789TJQKA';
     $values = 'J23456789TQKA' if $part2;
     my %card_order;
