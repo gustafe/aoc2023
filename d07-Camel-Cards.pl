@@ -126,7 +126,7 @@ sub get_type {
     }
     if ( keys %labels == 2 ) { # either four of a kind, or full house
 	# how are the labels distributed?
-        my @num = sort { $b <=> $a } map { $labels{$_} } keys %labels;
+        my @num = sort { $b <=> $a } values %labels;
         if ( $num[0] == 4 and $num[1] == 1 ) {
             return '2_four_of_a_kind';
         } elsif ( $num[0] == 3 and $num[1] == 2 ) {
@@ -134,7 +134,7 @@ sub get_type {
         }
     }
     if ( keys %labels == 3 ) { # either tree of a kind, or two pair
-        my @num = sort { $b <=> $a } map { $labels{$_} } keys %labels;
+        my @num = sort { $b <=> $a } values %labels;
         if ( $num[0] == 3 ) {
             return '4_three_of_a_kind';
         }
