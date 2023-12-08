@@ -13,7 +13,23 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 14 / 14
+Running score: 16 / 16
+
+### Day 8: Haunted Wasteland
+
+Not the most difficult of puzzles. I realized after letting my first
+naive stab at part 2 run for 10 minutes that There Had To Be A Better
+Way. The obvious next step was to find the least common multiple of
+each different "A to Z" path. I was a bit worried that the path
+lengths would not be the same with each repetition, but either the
+puzzle input assured that, or there's some math reason they're always
+the same.
+
+The LCD calculation is from the most excellent `ntheory` module.
+
+Score: 2
+
+Leaderboard completion time: 10m16s
 
 ### Day 7: Camel Cards
 
@@ -140,6 +156,7 @@ Leaderboard completion time: 7m03s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
+1. Day 08 - Haunted Wasteland: 10m16s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
 1. Day 02 - Cube Conundrum: 6m15s
