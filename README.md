@@ -13,7 +13,16 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 16 / 16
+Running score: 18 / 18
+
+### Day 9: Mirage Maintenance
+
+Remarkably easy, especially considering it's a weekend problem. I
+suspect we'll see more of this tomorrow.
+
+Score: 2
+
+Leaderboard completion time: 5m36s
 
 ### Day 8: Haunted Wasteland
 
@@ -160,5 +169,6 @@ Leaderboard completion time: 7m03s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
 1. Day 02 - Cube Conundrum: 6m15s
+1. Day 09 - Mirage Maintenance: 5m36s
 1. Day 06 - Wait For It: 5m02s
 
