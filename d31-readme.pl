@@ -21,6 +21,8 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 =over
 
+=item day 10 part 2, implies a better solution for day 1
+
 =back
 
 =head2 Solution comments in reverse order

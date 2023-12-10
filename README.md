@@ -11,9 +11,22 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## TODO
 
+- day 10 part 2, implies a better solution for day 1
+
 ## Solution comments in reverse order
 
-Running score: 18 / 18
+Running score: 19 / 20
+
+### Day 10: Pipe Maze
+
+Toughest puzzle so far this year. I've gotten an ugly brute force
+solution for part 1 but not solved part 2 yet.
+
+TODO: part 2
+
+Score: 1
+
+Leaderboard completion time: 36m31s
 
 ### Day 9: Mirage Maintenance
 
@@ -162,6 +175,7 @@ Leaderboard completion time: 7m03s
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
+1. Day 10 - TODO Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
