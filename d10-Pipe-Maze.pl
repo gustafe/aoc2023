@@ -81,7 +81,6 @@ push @queue,   $start;
 push @visited, $start;
 $loop{ $start->[0] }{ $start->[1] } = 1;
 while (@queue) {
-    say dump \@queue if $testing;
     my $cur = shift @queue;
 
     my $shape = $Map->{ $cur->[0] }{ $cur->[1] };
@@ -96,7 +95,6 @@ while (@queue) {
 }
 my $part1;
 my $length = scalar @visited;
-say "total length: ", $length if $testing;
 if ( $length % 2 == 0 ) {
     $part1 = $length / 2;
 } else {
@@ -107,9 +105,7 @@ if ( $length % 2 == 0 ) {
 my $part2;
 for my $row ( sort { $a <=> $b } keys %$Map ) {
     for my $col ( sort { $a <=> $b } keys %{ $Map->{$row} } ) {
-        say "checking point at ($row,$col)..." if $testing;
         if ( $loop{$row}{$col} ) {
-            say "($row,$col) is part of the loop, skipping... " if $testing;
             next;
         }
 
@@ -119,9 +115,6 @@ for my $row ( sort { $a <=> $b } keys %$Map ) {
         my ( $dr, $dc ) = ( 1, 1 );
         while ( $Map->{ $row + $dr }{ $col + $dc } ) {
             if ( $loop{ $row + $dr }{ $col + $dc } ) {
-                say "crossed loop at ($row+$dr,$col+$dc), character is "
-                    . $Map->{ $row + $dr }{ $col + $dc }
-                    if $testing;
                 $crossings++
                     if $Map->{ $row + $dr }{ $col + $dc } =~ m/[FJ\-|]/;
             }
@@ -130,9 +123,6 @@ for my $row ( sort { $a <=> $b } keys %$Map ) {
             $dc++;
         }
         if ( $crossings % 2 != 0 ) {
-            say
-                "uneven number of crossings: $crossings. Adding point to interior"
-                if $testing;
             $part2++;
         }
     }
