@@ -15,7 +15,18 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 19 / 20
+Running score: 21 / 22
+
+### Day 11: Cosmic Expansion
+
+I'm proud that my part 1 solution was easily expanded to handle part
+2: instead of "physically" expanding the map, I just added an offset
+to each galaxy which were stored in a hash. This made changing the
+offset from double to 1M trivial.
+
+Score: 2
+
+Leaderboard completion time: 9m18s
 
 ### Day 10: Pipe Maze
 
@@ -180,6 +191,7 @@ Leaderboard completion time: 7m03s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 08 - Haunted Wasteland: 10m16s
+1. Day 11 - Cosmic Expansion: 9m18s
 1. Day 04 - Scratchcards: 7m08s
 1. Day 01 - Trebuchet: 7m03s
 1. Day 02 - Cube Conundrum: 6m15s
