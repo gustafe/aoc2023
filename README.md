@@ -11,11 +11,9 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## TODO
 
-- day 10 part 2, implies a better solution for day 1
-
 ## Solution comments in reverse order
 
-Running score: 21 / 22
+Running score: 22 / 22
 
 ### Day 11: Cosmic Expansion
 
@@ -30,12 +28,19 @@ Leaderboard completion time: 9m18s
 
 ### Day 10: Pipe Maze
 
-Toughest puzzle so far this year. I've gotten an ugly brute force
-solution for part 1 but not solved part 2 yet.
+Toughest puzzle so far this year.
 
-TODO: part 2
+On Sun, I found an ugly brute force but had to put off solving part 2.
 
-Score: 1
+On Mon I read up a bit on the theory of how to determine interior
+points and implemented that. I also cleaned up my part 1, using a
+modified flood-fill algo to "paint" the loop.
+
+Regarding counting crossings, many commentators in the subreddit
+pointed out that moving diagonally simplified the logic of when the
+loop was crossed.
+
+Score: 2
 
 Leaderboard completion time: 36m31s
 
@@ -186,7 +191,7 @@ Leaderboard completion time: 7m03s
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
-1. Day 10 - TODO Pipe Maze: 36m31s
+1. Day 10 - Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
