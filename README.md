@@ -11,9 +11,19 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## TODO
 
+- Day 12
+
 ## Solution comments in reverse order
 
-Running score: 22 / 22
+Running score: 22 / 24
+
+### Day 12: TODO Hot Springs
+
+Punting on this puzzle for now. 
+
+Score: 0
+
+Leaderboard completion time: 22m57s
 
 ### Day 11: Cosmic Expansion
 
@@ -193,6 +203,7 @@ Leaderboard completion time: 7m03s
 
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
+1. Day 12 - TODO Hot Springs: 22m57s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 08 - Haunted Wasteland: 10m16s
