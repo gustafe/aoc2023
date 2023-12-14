@@ -12,19 +12,17 @@ I award myself one point per star, but only if I manage to solve it myself witho
 ## TODO
 
 - Day 12
-- Day 13 part 2
 
 ## Solution comments in reverse order
 
-Running score: 23 / 26
+Running score: 24 / 26
 
 ### Day 13: Point of Incidence
 
-Scruffy part 1 for now, part 2 is eluding me for now.
+This wasn't my favorite puzzle of the year, but I managed a solution
+with a little help from the functions in 2020D20.
 
-TODO: part 2
-
-Score: 1
+Score: 2
 
 Leaderboard completion time: 13m46s
 
@@ -216,7 +214,7 @@ Leaderboard completion time: 7m03s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
 1. Day 07 - Camel Cards: 16m00s
-1. Day 13 - Point of Incidence p1: 13m46s
+1. Day 13 - Point of Incidence: 13m46s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 08 - Haunted Wasteland: 10m16s
 1. Day 11 - Cosmic Expansion: 9m18s
