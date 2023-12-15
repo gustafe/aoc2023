@@ -16,7 +16,22 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 25 / 28
+Running score: 27 / 30
+
+### Day 15: Lens Library
+
+Not the most complex of puzzles, once I figured out the key text in
+part 2: "The result of running the HASH algorithm on the label
+indicates the correct box for that step".
+
+I used a hashref internally for each box, for ease of lookup when
+replacing lenses. This made adding lenses a bit more complex, but not
+overly so. I had a lot of issues getting the hashref _out_ when
+adding the focusing, so the code looks gnarly there.
+
+Score: 2
+
+Leaderboard completion time: 11m04s.
 
 ### Day 14: Parabolic Reflector Dish, part 1
 
@@ -230,6 +245,7 @@ Leaderboard completion time: 7m03s
 1. Day 07 - Camel Cards: 16m00s
 1. Day 13 - Point of Incidence: 13m46s
 1. Day 03 - Gear Ratios: 11m37s
+1. Day 15 - Lens Library: 11m04s.
 1. Day 08 - Haunted Wasteland: 10m16s
 1. Day 11 - Cosmic Expansion: 9m18s
 1. Day 04 - Scratchcards: 7m08s
