@@ -16,7 +16,7 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 27 / 30
+Running score: 28 / 30
 
 ### Day 15: Lens Library
 
@@ -33,15 +33,13 @@ Score: 2
 
 Leaderboard completion time: 11m04s.
 
-### Day 14: Parabolic Reflector Dish, part 1
+### Day 14: Parabolic Reflector Dish
 
-Only part 1 for now.
+Scruffy solution but at least I know what's going on. 
 
 Dealing with matrices yesterday helped a bit with this one.
 
-TODO: part 2.
-
-Score: 1
+Score: 2
 
 Leaderboard completion time: 17m15s.
 
@@ -241,7 +239,7 @@ Leaderboard completion time: 7m03s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
-1. Day 14 - Parabolic Reflector Dish part 1: 17m15s.
+1. Day 14 - Parabolic Reflector Dish: 17m15s.
 1. Day 07 - Camel Cards: 16m00s
 1. Day 13 - Point of Incidence: 13m46s
 1. Day 03 - Gear Ratios: 11m37s
