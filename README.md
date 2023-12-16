@@ -16,7 +16,19 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 28 / 30
+Running score: 30 / 32
+
+### Day 16: The Floor Will Be Lava
+
+My first solution to part one used a counter to detect loops, which gave each entry point a runtime of about 30s. I quickly realized it would take 2hrs to bruteforce this, but I had a Christmas tree to deal with so I just set it to run. After about 50% I noticed the number of energized cells wasn't changing, so I just put that in as the part 2 answer and it was accepted! 
+
+Obviously this wasn't general enough so I coded up a better loop detection. Now the entire brute force runs in 30s...
+
+Incidentally for my input part 2 was for the very next row, but from the opposite direction... 
+
+Score: 2
+
+Leaderboard completion time: 15m30s
 
 ### Day 15: Lens Library
 
@@ -241,6 +253,7 @@ Leaderboard completion time: 7m03s
 1. Day 12 - TODO Hot Springs: 22m57s
 1. Day 14 - Parabolic Reflector Dish: 17m15s.
 1. Day 07 - Camel Cards: 16m00s
+1. Day 16 - The Floor Will Be Lava: 15m30s
 1. Day 13 - Point of Incidence: 13m46s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 15 - Lens Library: 11m04s.
