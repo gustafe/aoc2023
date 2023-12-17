@@ -23,7 +23,7 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 =item Day 12
 
-=item Day 14 part 2
+=item Day 17
 
 =back
 

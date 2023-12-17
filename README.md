@@ -12,13 +12,15 @@ I award myself one point per star, but only if I manage to solve it myself witho
 ## TODO
 
 - Day 12
-- Day 14 part 2
+- Day 17
 
 ## Solution comments in reverse order
 
 Running score: 30 / 34
 
-### Day 17.pl: Clumsy Crucible
+### Day 17: Clumsy Crucible
+
+I have to give this a pass for now because of prior commitments. 
 
 TODO
 
