@@ -16,7 +16,15 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 30 / 32
+Running score: 30 / 34
+
+### Day 17.pl: Clumsy Crucible
+
+TODO
+
+Score: 0
+
+Leaderboard completion time: 20m00s
 
 ### Day 16: The Floor Will Be Lava
 
@@ -251,6 +259,7 @@ Leaderboard completion time: 7m03s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
+1. Day 17 - TODO Clumsy Crucible: 20m00s
 1. Day 14 - Parabolic Reflector Dish: 17m15s.
 1. Day 07 - Camel Cards: 16m00s
 1. Day 16 - The Floor Will Be Lava: 15m30s
