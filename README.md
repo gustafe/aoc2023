@@ -16,7 +16,22 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 ## Solution comments in reverse order
 
-Running score: 30 / 34
+Running score: 32 / 36
+
+### Day 18: Lavaduct Lagoon
+
+This was a fun one. Part 1 was basically interior point finding like
+in Day 10, but I struggled to get it to work with the "shapes"
+involved. Finally got an answer... and realized part 2 was gonna be a
+whole different ballgame.
+
+But I'd head about the Shoelace formula when studying Day 10, and when
+I saw people referencing it I used that, along with parts of Pick's
+theorem to get the correct values.
+
+Score: 2
+
+Leaderboard completion time: 20m55s
 
 ### Day 17: Clumsy Crucible
 
@@ -261,6 +276,7 @@ Leaderboard completion time: 7m03s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
+1. Day 18 - Lavaduct Lagoon: 20m55s
 1. Day 17 - TODO Clumsy Crucible: 20m00s
 1. Day 14 - Parabolic Reflector Dish: 17m15s.
 1. Day 07 - Camel Cards: 16m00s
