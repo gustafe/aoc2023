@@ -25,6 +25,8 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 =item Day 17
 
+=item Day 19, part 2
+
 =back
 
 =head2 Solution comments in reverse order

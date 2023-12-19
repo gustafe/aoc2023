@@ -13,10 +13,21 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 - Day 12
 - Day 17
+- Day 19, part 2
 
 ## Solution comments in reverse order
 
-Running score: 32 / 36
+Running score: 33 / 38
+
+### Day 19: Aplenty
+
+Part one only for now. 
+
+TODO: Part 2
+
+Score: 1
+
+Leaderboard completion time: 29m12s
 
 ### Day 18: Lavaduct Lagoon
 
@@ -274,6 +285,7 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 10 - Pipe Maze: 36m31s
+1. Day 19 - Aplenty 1: 29m12s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
 1. Day 18 - Lavaduct Lagoon: 20m55s
