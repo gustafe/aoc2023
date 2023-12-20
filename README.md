@@ -14,10 +14,19 @@ I award myself one point per star, but only if I manage to solve it myself witho
 - Day 12
 - Day 17
 - Day 19, part 2
+- Day 20 
 
 ## Solution comments in reverse order
 
-Running score: 33 / 38
+Running score: 33 / 40
+
+### Day 20: Pulse Propagation
+
+TODO
+
+Score: 0
+
+Leaderboard completion time: 48m46s
 
 ### Day 19: Aplenty
 
@@ -284,6 +293,7 @@ Leaderboard completion time: 7m03s
 
 ### Puzzles by difficulty  (leaderboard completion times)
 
+1. Day 20 - Pulse Propagation: 48m46s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 19 - Aplenty 1: 29m12s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
