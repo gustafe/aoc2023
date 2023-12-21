@@ -303,7 +303,7 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 21 - TODO Step Counter: 1h19m03s
-1. Day 20 - Pulse Propagation: 48m46s
+1. Day 20 - TODO Pulse Propagation: 48m46s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 19 - Aplenty 1: 29m12s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
