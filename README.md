@@ -16,10 +16,19 @@ I award myself one point per star, but only if I manage to solve it myself witho
 - Day 19, part 2
 - Day 20 
 - Day 21
+- Day 22
 
 ## Solution comments in reverse order
 
-Running score: 33 / 42
+Running score: 33 / 44
+
+### Day 22: Sand Slabs
+
+TODO
+
+Score: 0
+
+Leaderboard completion time: 29m38s
 
 ### Day 21: Step Counter
 
@@ -305,6 +314,7 @@ Leaderboard completion time: 7m03s
 1. Day 21 - TODO Step Counter: 1h19m03s
 1. Day 20 - TODO Pulse Propagation: 48m46s
 1. Day 10 - Pipe Maze: 36m31s
+1. Day 22 - TODO Sand Slabs: 29m38s
 1. Day 19 - Aplenty 1: 29m12s
 1. Day 05 - If You Give A Seed A Fertilizer: 26m37s
 1. Day 12 - TODO Hot Springs: 22m57s
