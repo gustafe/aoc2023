@@ -33,6 +33,12 @@ I award myself one point per star, but only if I manage to solve it myself witho
 
 =item Day 22
 
+=item Day 23
+
+=item Day 24, part 2
+
+=item Day 25
+
 =back
 
 =head2 Solution comments in reverse order

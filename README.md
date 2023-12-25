@@ -17,10 +17,37 @@ I award myself one point per star, but only if I manage to solve it myself witho
 - Day 20 
 - Day 21
 - Day 22
+- Day 23
+- Day 24, part 2
+- Day 25
 
 ## Solution comments in reverse order
 
-Running score: 33 / 44
+Running score: 34 / 50
+
+### Day 25: Snowverload
+
+TODO
+
+Score: 0
+
+Leaderboard completion time: 14m01s
+
+### Day 24: Never Tell Me The Odds
+
+TODO: Part 2
+
+Score: 1
+
+Leaderboard completion time: 1h02m10s
+
+### Day 23: A Long Walk
+
+TODO
+
+Score: 0
+
+Leaderboard completion time: 38m20s
 
 ### Day 22: Sand Slabs
 
@@ -312,7 +339,9 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 21 - TODO Step Counter: 1h19m03s
+1. Day 24 - TODO Never Tell Me The Odds: 1h02m10s
 1. Day 20 - TODO Pulse Propagation: 48m46s
+1. Day 23 - TODO A Long Walk: 38m20s
 1. Day 10 - Pipe Maze: 36m31s
 1. Day 22 - TODO Sand Slabs: 29m38s
 1. Day 19 - Aplenty 1: 29m12s
@@ -323,6 +352,7 @@ Leaderboard completion time: 7m03s
 1. Day 14 - Parabolic Reflector Dish: 17m15s.
 1. Day 07 - Camel Cards: 16m00s
 1. Day 16 - The Floor Will Be Lava: 15m30s
+1. Day 25 - TODO Snowverload: 14m01s
 1. Day 13 - Point of Incidence: 13m46s
 1. Day 03 - Gear Ratios: 11m37s
 1. Day 15 - Lens Library: 11m04s.
