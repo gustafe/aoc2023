@@ -35,6 +35,8 @@ Leaderboard completion time: 14m01s
 
 ### Day 24: Never Tell Me The Odds
 
+Part 1 for now, simple linear equations
+
 TODO: Part 2
 
 Score: 1
@@ -339,7 +341,7 @@ Leaderboard completion time: 7m03s
 ### Puzzles by difficulty  (leaderboard completion times)
 
 1. Day 21 - TODO Step Counter: 1h19m03s
-1. Day 24 - TODO Never Tell Me The Odds: 1h02m10s
+1. Day 24 - Never Tell Me The Odds 1: 1h02m10s
 1. Day 20 - TODO Pulse Propagation: 48m46s
 1. Day 23 - TODO A Long Walk: 38m20s
 1. Day 10 - Pipe Maze: 36m31s
